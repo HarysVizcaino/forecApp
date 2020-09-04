@@ -1,0 +1,1 @@
+export const MOON_IMAGE = './assets/images/moon.png';

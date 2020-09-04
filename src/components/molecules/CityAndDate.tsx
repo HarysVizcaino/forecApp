@@ -13,6 +13,7 @@ export const CityAndDate = () => (
 const styles = StyleSheet.create({
   container: {
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    marginBottom: 10
   }
 })
