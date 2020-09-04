@@ -10,9 +10,6 @@ const HeaderHome = () => (
 
 const styles =StyleSheet.create({
   container: {
-    backgroundColor: 'red',
-    borderWidth: 1,
-    borderColor: 'red',
     flex: 1
   }
 })

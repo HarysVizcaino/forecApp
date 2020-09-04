@@ -1,5 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet} from 'react-native';
+import { heightPercentageToDP as hp } from 'react-native-responsive-screen';
+
 import FooterWeatherBlock from '../../atoms/FooterWeatherBlock';
 
 const HomeFooter = () => {
@@ -15,10 +17,9 @@ const HomeFooter = () => {
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    borderWidth: 1,
     flex: 1,
-    borderColor: 'blue',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    marginBottom: hp(5)
   }
 })
 

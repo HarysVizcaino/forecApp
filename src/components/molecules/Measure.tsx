@@ -6,9 +6,9 @@ import { Typographic } from '../../styles';
 
 const Measure = () => (
   <View style={styles.container}>
-    <Title label="22 C" size={Typographic.FONT_SIZE_50} />
+    <Title label="22 C" size={Typographic.FONT_SIZE_60} />
     <SubTitle label="GOOD MORNING" size={Typographic.FONT_SIZE_16} />
-    <SubTitle label="Harys" size={Typographic.FONT_SIZE_16} />
+    <SubTitle label="Harys" size={Typographic.FONT_SIZE_18} />
 
   </View>
 )

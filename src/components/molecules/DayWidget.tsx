@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
+import { heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { DayWidget as DayWidgetAtom } from '../atoms/DayWidget';
 
 export const DayWidget = () => (
@@ -11,6 +12,7 @@ export const DayWidget = () => (
 const styles = StyleSheet.create({
   container: {
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    marginBottom: hp(10)
   }
 })

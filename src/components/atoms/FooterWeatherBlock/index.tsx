@@ -1,13 +1,13 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { Colors } from '../../../styles';
+import { Colors, Typographic } from '../../../styles';
 
 const FooterWeatherBlock = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>HIII</Text>
-      <Text style={styles.text}>SUNRISE</Text>
-      <Text style={styles.text}>7:00</Text>
+      <Text style={styles.textNumber}>HIII</Text>
+      <Text style={styles.textParagraph}>SUNSET</Text>
+      <Text style={styles.textNumber}>7:00</Text>
     </View>
     )
 }
@@ -15,13 +15,16 @@ const FooterWeatherBlock = () => {
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'column',
-    borderWidth: 1,
-    borderColor: 'red',
     justifyContent: 'center'
   },
-  text: {
+  textParagraph: {
     color: Colors.WHITE,
-    textAlign: 'center'
+    fontSize: Typographic.FONT_SIZE_11
+  },
+  textNumber: {
+    color: Colors.WHITE,
+    textAlign: 'center',
+    fontSize: Typographic.FONT_SIZE_16
   }
 })
 
