@@ -2,12 +2,20 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { Colors, Typographic } from '../../../styles';
 
-const FooterWeatherBlock = () => {
+interface IProps {
+  Icon: () => React.ReactChild;
+  label: string;
+  value: string;
+}
+
+const FooterWeatherBlock = ({ Icon, label, value }: IProps) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.textNumber}>HIII</Text>
-      <Text style={styles.textParagraph}>SUNSET</Text>
-      <Text style={styles.textNumber}>7:00</Text>
+      <View style={{ marginBottom: 5 }}>
+      {Icon()}
+      </View>
+  <Text style={styles.textParagraph}>{label}</Text>
+      <Text style={styles.textNumber}>{value}</Text>
     </View>
     )
 }
@@ -15,7 +23,8 @@ const FooterWeatherBlock = () => {
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'column',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   textParagraph: {
     color: Colors.WHITE,
@@ -24,7 +33,8 @@ const styles = StyleSheet.create({
   textNumber: {
     color: Colors.WHITE,
     textAlign: 'center',
-    fontSize: Typographic.FONT_SIZE_16
+    fontSize: Typographic.FONT_SIZE_24,
+    fontWeight: '300'
   }
 })
 
