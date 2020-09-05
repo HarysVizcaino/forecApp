@@ -5,7 +5,7 @@ import { Colors } from '../../../styles';
 import { TOUCHABLE_AREA } from '../../../contants';
 
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-import { faSun, faTemperatureLow, faWater, faEllipsisV  } from '@fortawesome/free-solid-svg-icons'
+import { faSun, faTemperatureLow, faWater, faEllipsisV,  faSearch  } from '@fortawesome/free-solid-svg-icons'
 
 const HeaderMenu = () => (
   <TouchableOpacity hitSlop={TOUCHABLE_AREA}>
