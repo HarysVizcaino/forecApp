@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet} from 'react-native';
-import { Colors, Typographic } from '../../../styles';
+import { Colors } from '../../../styles';
 
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faSun, faTemperatureLow, faWater  } from '@fortawesome/free-solid-svg-icons';

@@ -19,7 +19,7 @@ import {
 } from 'react-native';
 
 import Home from './scenes/Home';
-import MenuModal from './components/molecules/MenuModal';
+import MenuModal from './components/organisms/MenuModal';
 declare const global: {HermesInternal: null | {}};
 
 const App = () => {
