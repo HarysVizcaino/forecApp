@@ -19,12 +19,14 @@ import {
 } from 'react-native';
 
 import Home from './scenes/Home';
+import MenuModal from './components/molecules/MenuModal';
 declare const global: {HermesInternal: null | {}};
 
 const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
+      <MenuModal />
       <Home />
     </>
   );
