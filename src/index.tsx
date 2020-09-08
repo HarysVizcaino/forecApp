@@ -18,17 +18,26 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
 import Home from './scenes/Home';
+import Map from './scenes/Map';
 import MenuModal from './components/organisms/MenuModal';
 declare const global: {HermesInternal: null | {}};
+
+const Stack = createStackNavigator();
 
 const App = () => {
   return (
     <>
-      <StatusBar barStyle="dark-content" />
-      <MenuModal />
-      <Home />
+    <MenuModal />
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home" headerMode="none">
+      <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="Map" component={Map} />
+      </Stack.Navigator>
+    </NavigationContainer>
     </>
   );
 };
